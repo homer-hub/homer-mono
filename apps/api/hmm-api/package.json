@@ -5,7 +5,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "serve:dev": "nodemon src/index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "lint": "lint-staged"
+  },
+  "lint-staged": {
+    "*.ts": ["eslint --fix", "prettier --write"]
   },
   "keywords": [],
   "author": "",
@@ -13,7 +17,12 @@
   "devDependencies": {
     "@types/koa": "^2.13.12",
     "@types/node": "^20",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.1.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
     "nodemon": "^3.0.2",
+    "prettier": "^3.1.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
