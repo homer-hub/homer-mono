@@ -9,7 +9,10 @@
     "lint": "lint-staged"
   },
   "lint-staged": {
-    "*.ts": ["eslint --fix", "prettier --write"]
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -27,6 +30,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "config": "^3.3.9",
     "koa": "^2.15.0"
   }
 }
