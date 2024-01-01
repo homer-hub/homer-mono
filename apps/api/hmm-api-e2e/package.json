@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:e2e": "jest --verbose --colors",
-    "test": "jest"
+    "test:e2e": "jest --verbose --colors"
   },
   "keywords": [],
   "author": "",
