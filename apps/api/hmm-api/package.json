@@ -9,12 +9,16 @@
     "lint": "lint-staged"
   },
   "lint-staged": {
-    "*.ts": ["eslint --fix", "prettier --write"]
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/config": "^3.3.3",
     "@types/koa": "^2.13.12",
     "@types/node": "^20",
     "eslint-config-prettier": "^9.0.0",
@@ -27,6 +31,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "config": "^3.3.9",
     "koa": "^2.15.0"
   }
 }

@@ -1,11 +1,14 @@
-import Koa, { Context } from "koa";
+import Koa, { Context } from 'koa'
+import config from 'config'
 
-const app = new Koa();
+const app = new Koa()
 
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
-});
+const port = config.get('PORT') as number
+
+app.listen(port, () => {
+  console.log(`HMM-API is listening on port ${port}`)
+})
 
 app.use((ctx: Context) => {
-  ctx.body = "Hello World";
-});
+  ctx.body = 'Hello World'
+})
