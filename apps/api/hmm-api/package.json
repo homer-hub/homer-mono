@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
     "serve:dev": "nodemon src/index.ts",
     "build": "tsc",
     "lint": "lint-staged"
