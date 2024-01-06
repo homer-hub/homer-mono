@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "serve:dev": "nodemon src/index.ts",
     "build": "tsc",
     "lint": "lint-staged",
-    "plop": "plop"
+    "plop": "plop",
+    "serve:dev": "nodemon src/index.ts",
+    "test": "jest",
+    "test-local": "jest --watch --runInBand --verbose --colors"
   },
   "lint-staged": {
     "*.ts": [
