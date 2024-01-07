@@ -1,4 +1,4 @@
-import { SYSTEM } from '@homer-hub/hmm-types'
+import { SYSTEM, DATA } from '@homer-hub/hmm-types'
 
 export type CONFIG = {
   PORT?: number
@@ -8,9 +8,9 @@ export type CONFIG = {
 }
 
 const defaultConfig: CONFIG = {
-  PORT: 3001,
+  PORT: SYSTEM.DEFAULT_PORT,
   MONGO: {
-    CONNECTION_STRING: `mongodb://${SYSTEM.LOCAL_IP}:27017/hmm`,
+    CONNECTION_STRING: `mongodb://${SYSTEM.LOCAL_IP}:27017/${DATA.HOMER_DB}`,
   },
 }
 
