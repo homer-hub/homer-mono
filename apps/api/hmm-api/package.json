@@ -5,6 +5,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "lint-staged",
+    "mongo-up": "docker run --name homer-mongo-local -p 27017:27017 -d mongo",
     "plop": "plop",
     "serve:dev": "nodemon src/index.ts",
     "test": "jest",
@@ -36,7 +37,9 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@types/mongoose": "^5.11.97",
     "config": "^3.3.9",
-    "koa": "^2.15.0"
+    "koa": "^2.15.0",
+    "mongoose": "^8.0.3"
   }
 }
