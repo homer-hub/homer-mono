@@ -26,6 +26,9 @@ importers:
       '@homer-hub/hmm-types':
         specifier: workspace:*
         version: link:../../../packages/hmm-types
+      '@ladjs/graceful':
+        specifier: ^3.2.2
+        version: 3.2.2
       '@types/mongoose':
         specifier: ^5.11.97
         version: 5.11.97
@@ -1319,6 +1322,14 @@ packages:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
+
+  /@ladjs/graceful@3.2.2:
+    resolution: {integrity: sha512-GyL5Cpgh2RlndFW2e4AUHrEDe0tzyXKpAs92wrAQhNKcY0y++qfK8PC+6TOHzN9zvxPY9j1KAU29Gfa9vxWzDg==}
+    engines: {node: '>=14'}
+    dependencies:
+      lil-http-terminator: 1.2.3
+      p-is-promise: 3.0.0
+    dev: false
 
   /@ljharb/through@2.3.11:
     resolution: {integrity: sha512-ccfcIDlogiXNq5KcbAwbaO7lMh3Tm1i3khMPYpxlK8hH/W53zN81KM9coerRLOnTGu3nfXIniAmQbRI9OxbC0w==}
@@ -5576,6 +5587,11 @@ packages:
       resolve: 1.22.8
     dev: true
 
+  /lil-http-terminator@1.2.3:
+    resolution: {integrity: sha512-vQcHSwAFq/kTR2cG6peOVS7SjgksGgSPeH0G2lkw+buue33thE/FCHdn10wJXXshc5RswFy0Iaz48qA2Busw5Q==}
+    engines: {node: '>=12'}
+    dev: false
+
   /lilconfig@2.1.0:
     resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
     engines: {node: '>=10'}
@@ -6265,6 +6281,11 @@ packages:
     resolution: {integrity: sha512-D2FR03Vir7FIu45XBY20mTb+/ZSWB00sjU9jdQXt83gDrI4Ztz5Fs7/yy74g2N5SVQY4xY1qDr4rNddwYRVX0g==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /p-is-promise@3.0.0:
+    resolution: {integrity: sha512-Wo8VsW4IRQSKVXsJCn7TomUaVtyfjVDn3nUP7kE967BQk0CwFpdbZs0X0uk5sW9mkBa9eNM7hCMaG93WUAwxYQ==}
+    engines: {node: '>=8'}
+    dev: false
 
   /p-limit@2.3.0:
     resolution: {integrity: sha512-//88mFWSJx8lxCzwdAABTJL2MyWB12+eIY7MDL2SqLmAkeKU9qxRvWuSyTjm3FUmpBEMuFfckAIqEaVGUDxb6w==}
