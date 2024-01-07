@@ -23,6 +23,9 @@ importers:
 
   apps/api/hmm-api:
     dependencies:
+      '@homer-hub/hmm-types':
+        specifier: workspace:*
+        version: link:../../../packages/hmm-types
       '@types/mongoose':
         specifier: ^5.11.97
         version: 5.11.97
@@ -178,6 +181,8 @@ importers:
       typescript:
         specifier: ^5.2.2
         version: 5.2.2
+
+  packages/hmm-types: {}
 
   packages/typescript-config: {}
 
