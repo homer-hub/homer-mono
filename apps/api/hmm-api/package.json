@@ -37,10 +37,11 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@homer-hub/hmm-types": "workspace:*",
+    "@ladjs/graceful": "^3.2.2",
     "@types/mongoose": "^5.11.97",
     "config": "^3.3.9",
     "koa": "^2.15.0",
-    "mongoose": "^8.0.3",
-    "@homer-hub/hmm-types": "workspace:*"
+    "mongoose": "^8.0.3"
   }
 }
