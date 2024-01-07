@@ -1,3 +1,5 @@
+import { SYSTEM } from '@homer-hub/hmm-types'
+
 export type CONFIG = {
   PORT?: number
   MONGO?: {
@@ -8,7 +10,7 @@ export type CONFIG = {
 const defaultConfig: CONFIG = {
   PORT: 3001,
   MONGO: {
-    CONNECTION_STRING: 'mongodb://127.0.0.1:27017/hmm',
+    CONNECTION_STRING: `mongodb://${SYSTEM.LOCAL_IP}:27017/hmm`,
   },
 }
 
