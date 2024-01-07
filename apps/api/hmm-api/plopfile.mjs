@@ -21,7 +21,7 @@ export default function (plop) {
     actions: [
       {
         type: 'add',
-        path: '{{destination-path}}/{{snakeCase sut}}.test.ts',
+        path: '{{destination-path}}/{{dashCase sut}}.test.ts',
         templateFile: 'plop-templates/test.ts.hbs',
       },
     ],

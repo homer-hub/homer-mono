@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug hmm-api",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/apps/api/hmm-api/node_modules/ts-node/dist/bin.js",
+      "args": [
+        "${workspaceFolder}/apps/api/hmm-api/src/index.ts",
+        "NODE_ENV=development"
+      ],
+      "env": {
+        "NODE_CONFIG_DIR": "${workspaceFolder}/apps/api/hmm-api/config"
+      },
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}
